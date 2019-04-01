@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints
+  xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime"
+  version="2.0">
+  <endpoint
+      name="HelloWorldDoc"
+      implementation="com.example.doc.HelloWorldImpl"
+      url-pattern="/services/hellodoc"/>
+      
+     <endpoint
+      name="HelloWorldRpc"
+      implementation="com.example.rpc.HelloWorldImpl"
+      url-pattern="/services/hellorpc"/>
+</endpoints>
