@@ -45,8 +45,8 @@ class Printer {
    void print(Document doc) {
      //prints doc, docx, pdf and txt documents
    }
-   void print(Scanned doc) {
-     //prints scanned documents
+   void print(Scanned image) {
+     //prints an image file png, jpeg
    }
 }
 ```
