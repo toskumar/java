@@ -35,7 +35,7 @@ abstract class Bike {
 __Inheritance__ is a process of extending the features and behaviour of one class to another class
 ```java
 class MyBike extends Bike {
-  Color red;
+  Color color;
   Horn horn;
 }
 ```
