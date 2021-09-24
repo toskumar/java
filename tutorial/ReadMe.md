@@ -2,7 +2,7 @@
 
 __Procedural Language__ is based on the concept of the procedure call. A procedure is a set of instruction which has one or more input parameters and output parameter.
 ```C
-function float areaOfCircle(int radius) {
+float areaOfCircle(int radius) {
   return 3.14 * radius * radius;
 }
 ```
