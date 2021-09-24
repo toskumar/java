@@ -52,7 +52,7 @@ class Printer {
 ```
 ### OOPS example
 ```java
-interface class Printer {
+abstract class Printer {
   abstract void print();
   abstract void model();
 }
@@ -63,12 +63,16 @@ interface class Copier {
   abstract void copy();
 }
 
-abstract class SingleUsePrinter implements Printer {
+abstract class SingleUsePrinter extends Printer {
   void print() {
     System.out.println("SingleUsePrinter printing ...");
   }
+  void model() {
+    System.out.println("SingleUsePrinter");
+  }
 }
-abstract class MultiUsePrinter implements Printer, Scanner, Copier {
+
+abstract class MultiUsePrinter extends Printer implements Scanner, Copier {
   void print() {
     System.out.println("MultiUsePrinter printing ...");
   }
@@ -78,15 +82,20 @@ abstract class MultiUsePrinter implements Printer, Scanner, Copier {
   void copy() {
     System.out.println("MultiUsePrinter copying ...");
   }
+  void model() {
+    System.out.println("MultiUsePrinter");
+  }
 }
 
 class Epson3010 extends SingleUsePrinter {
   void model() {
+    super.model();
     System.out.println("Epson Model 3010");
   }
 }
 class Epson2010 extends MultiUsePrinter {
   void model() {
+    super.model();
     System.out.println("Epson Model 2010");
   }
 }
