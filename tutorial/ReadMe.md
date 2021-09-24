@@ -50,3 +50,44 @@ class Printer {
    }
 }
 ```
+### OOPS example
+```java
+interface class Printer {
+  abstract void print();
+  abstract void model();
+}
+interface class Scanner {
+  abstract void scan();
+}
+interface class Copier {
+  abstract void copy();
+}
+
+abstract class SingleUsePrinter implements Printer {
+  void print() {
+    System.out.println("SingleUsePrinter printing ...");
+  }
+}
+abstract class MultiUsePrinter implements Printer, Scanner, Copier {
+  void print() {
+    System.out.println("MultiUsePrinter printing ...");
+  }
+  void scan() {
+    System.out.println("MultiUsePrinter scanning ...");
+  }
+  void copy() {
+    System.out.println("MultiUsePrinter copying ...");
+  }
+}
+
+class Epson extends SingleUsePrinter {
+  void model() {
+    System.out.println("Epson Model 3010");
+  }
+}
+class Canon extends MultiUsePrinter {
+  void model() {
+    System.out.println("Canon Model 2010");
+  }
+}
+```
