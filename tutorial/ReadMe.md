@@ -7,6 +7,8 @@ function areaOfCircle(int radius) {
 }
 ```
 __Object Oriented Language__ programming style which use objects that contain both data and code.
+
+__Encapsulation__ refers to the bundling of data and methods
 ```java
 class Circle {
  int radius;
@@ -20,14 +22,31 @@ class Circle {
 ```
 __Abstraction__ is a process of hiding certain details and showing only essential information to the user.
 ```java
-Bike {
+abstract class Bike {
  Engine engine;
- void kickStart(){
+ void start(){
   this.engine.start();
  }
- void keyStop() {
+ void stop() {
     this.engine.stop()
  }
 }
 ```
-__
+__Inheritance__ is a process of extending the features and behaviour of one class to another class
+```java
+class MyBike extends Bike {
+  Color red;
+  Horn horn;
+}
+```
+__polymorphism__ the ability of an object to take many forms
+```java
+class Printer {
+   void print(Document doc) {
+     //prints doc, docx, pdf and txt documents
+   }
+   void print(Scanned doc) {
+     //prints scanned documents
+   }
+}
+```
