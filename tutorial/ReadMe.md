@@ -2,11 +2,11 @@
 
 __Procedural Language__ is based on the concept of the procedure call. A procedure is a set of instruction which has one or more input parameters and output parameter.
 ```C
-function areaOfCircle(int radius) {
+function float areaOfCircle(int radius) {
   return 3.14 * radius * radius;
 }
 ```
-__Object Oriented Language__ programming style which use objects that contain both data and code.
+__Object Oriented Language__ is a programming style which uses objects that contain both data and methods.
 
 __Encapsulation__ refers to the bundling of data and methods
 ```java
