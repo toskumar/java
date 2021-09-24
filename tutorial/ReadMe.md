@@ -80,14 +80,14 @@ abstract class MultiUsePrinter implements Printer, Scanner, Copier {
   }
 }
 
-class Epson extends SingleUsePrinter {
+class Epson3010 extends SingleUsePrinter {
   void model() {
     System.out.println("Epson Model 3010");
   }
 }
-class Canon extends MultiUsePrinter {
+class Epson2010 extends MultiUsePrinter {
   void model() {
-    System.out.println("Canon Model 2010");
+    System.out.println("Epson Model 2010");
   }
 }
 ```
