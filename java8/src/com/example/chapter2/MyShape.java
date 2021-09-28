@@ -1,5 +1,9 @@
 package com.example.chapter2;
 
+/**
+ * Abstract, final class and inheritance
+ * 
+ */
 public class MyShape {
 
 	public static void main(String args[]) {
