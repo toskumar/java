@@ -1,4 +1,4 @@
-package com.example.chapter2;
+package com.example.chapter3;
 
 /**
  * Interface contains abstract method and constants 

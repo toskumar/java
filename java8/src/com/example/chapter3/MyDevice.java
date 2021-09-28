@@ -1,4 +1,4 @@
-package com.example.chapter2;
+package com.example.chapter3;
 
 public class MyDevice {
 	public static void main(String arg[]) {
