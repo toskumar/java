@@ -1,7 +1,5 @@
 package com.example.chapter2;
 
-import java.util.Iterator;
-
 public class Control {
 
 	public static void main(String args[]) {
