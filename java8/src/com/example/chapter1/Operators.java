@@ -6,13 +6,13 @@ public class Operators {
 		int a = 0;
 		
 		// Relational operator
-		System.out.println("!true =>"+ !true);
-		System.out.println("true == true => " + (true == true));
+		System.out.println("!flase =>"+ !false);
+		System.out.println("true == false => " + (true == false));
 		System.out.println("true != false => " + (true != false));
 		System.out.println("10 >= 20 => " + (10 >= 20));
 		System.out.println("10 <= 20 => "+ (10 <= 20));
-		System.out.println("10 <= 20 && 20 >=10 => " + (10 <= 20 && 20 >=10));
-		System.out.println("10 <= 20 || 20 >=10 => " + (10 <= 20 || 20 >=10));
+		System.out.println("10 <= 20 && 20 >=10 => " + (a <= 20 && 20 >=10));
+		System.out.println("10 <= 20 || 20 >=10 => " + (a <= 20 || 20 >=10));
 		System.out.println("a=10 => "+(a=10));
 		
 		//Unary operator
