@@ -3,7 +3,7 @@ package com.example.chapter4;
 public class PrimeFactors {
 	// A function to print all prime factors
 	// of a given number n
-	public static void primeFactors(long n) {
+	public static void find(long n) {
 
 		// Print the number of 2s that divide n
 		while (n % 2 == 0) {
@@ -37,6 +37,6 @@ public class PrimeFactors {
 	public static void main(String[] args) {
 		//long n = 999999000002L;
 		long n = 1024*1024*1024;
-		primeFactors(n);
+		find(n);
 	}
 }
