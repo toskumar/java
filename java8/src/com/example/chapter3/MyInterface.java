@@ -10,8 +10,8 @@ public class MyInterface {
 		Wifi wifi1 = new AirtelService();
 		Wifi wifi2 = new JioService();
 
-		Guest guest1 = new Guest(wifi1, "pass1");
-		Guest guest2 = new Guest(wifi2, "pass2");
+		User user1 = new User(wifi1, "pass1");
+		User user2 = new User(wifi2, "pass2");
 	}
 }
 
@@ -34,9 +34,9 @@ class JioService implements Wifi {
 	}
 }
 
-class Guest {
+class User {
 	
-	Guest(Wifi wifi, String password) {
+	User(Wifi wifi, String password) {
 		wifi.connect(password);
 	}
 }
