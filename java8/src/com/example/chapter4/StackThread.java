@@ -48,7 +48,7 @@ public class StackThread {
 			while(true) {
 				try {
 					myStack.push();
-					Thread.sleep(300);
+					Thread.sleep(500);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -59,7 +59,7 @@ public class StackThread {
 			while(true){
 				try {
 					myStack.pop();
-					Thread.sleep(500);
+					Thread.sleep(300);
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -69,8 +69,11 @@ public class StackThread {
 		Thread t1 = new Thread(r1, "Thread-1");
 		t1.start();
 
-		Thread t2 = new Thread(r2, "Thread-2");
+		Thread t2 = new Thread(r1, "Thread-2");
 		t2.start();
 
+		Thread t3 = new Thread(r2, "Thread-3");
+		t3.start();
+		
 	}
 }
