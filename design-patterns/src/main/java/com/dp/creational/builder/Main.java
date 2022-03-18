@@ -10,5 +10,14 @@ public class Main {
 		userBuilder.addAddress("Madivala, Bangalore");
 		
 		System.out.println(userBuilder);
+		
+		
+		MealBuilder mealBuilder = new MealBuilder();
+		mealBuilder.addBurger(1);
+		mealBuilder.addCake(2);
+		mealBuilder.addIcecream(1);
+		
+		mealBuilder.printBill();
+	
 	}
 }
