@@ -1,4 +1,4 @@
-package com.dp.structural.decorator;
+package com.dp.structural.adaptor;
 
 interface Socket {
 	void multiPin();
