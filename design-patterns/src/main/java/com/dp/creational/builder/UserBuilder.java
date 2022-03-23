@@ -38,7 +38,7 @@ public class UserBuilder {
 		user.setAddress(address);
 		return this;
 	}
-	
+
 	@Override
 	public String toString() {
 		return this.user.toString();

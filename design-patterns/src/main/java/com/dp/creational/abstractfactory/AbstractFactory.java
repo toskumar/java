@@ -24,14 +24,14 @@ class HPLaptop implements Laptop {
 	String model;
 	int year;
 
-	HPLaptop( String model, int year) {
+	HPLaptop(String model, int year) {
 		this.model = model;
 		this.year = year;
 	}
 
 	@Override
 	public String getModel() {
-		return "name=HP " +  ", model=" + model + ", year=" + year;
+		return "name=HP " + ", model=" + model + ", year=" + year;
 	}
 }
 

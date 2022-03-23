@@ -105,6 +105,6 @@ public class MealBuilder {
 
 		}
 
-		System.out.println("Total Amount = "  + this.mealBox.getBillAmount());
+		System.out.println("Total Amount = " + this.mealBox.getBillAmount());
 	}
 }

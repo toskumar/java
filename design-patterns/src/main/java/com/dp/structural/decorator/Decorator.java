@@ -44,12 +44,12 @@ class Sprinkles extends IcecreamDecorator {
 	public Sprinkles(Icecream icecream) {
 		this.icecream = icecream;
 	}
-	
+
 	@Override
 	public String getName() {
 		return this.icecream.getName();
 	}
-	
+
 	@Override
 	public double cost() {
 		return this.icecream.cost() + 1.50;
@@ -62,15 +62,14 @@ class HotFudge extends IcecreamDecorator {
 	public HotFudge(Icecream icecream) {
 		this.icecream = icecream;
 	}
-	
+
 	@Override
 	public String getName() {
 		return this.icecream.getName();
 	}
-	
+
 	@Override
 	public double cost() {
 		return this.icecream.cost() + 1.60;
 	}
 }
-

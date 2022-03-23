@@ -22,14 +22,14 @@ class ChineseSocket {
 class ChineseAdapter implements Socket {
 
 	ChineseSocket socket;
+
 	public ChineseAdapter(ChineseSocket socket) {
 		this.socket = socket;
 	}
-	
+
 	@Override
 	public void multiPin() {
 		this.socket.multiPurposePin();
 	}
 
 }
-
