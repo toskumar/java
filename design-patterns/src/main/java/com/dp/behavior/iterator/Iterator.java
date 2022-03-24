@@ -10,7 +10,7 @@ interface MyIterator {
 class MyIteratorImpl implements MyIterator {
 
 	Stack stack;
-	
+
 	int current = 0;
 
 	public MyIteratorImpl(Stack stack) {
@@ -45,7 +45,7 @@ interface Stack {
 	public int position();
 
 	public int size();
-	
+
 	public MyIterator iterator();
 }
 
