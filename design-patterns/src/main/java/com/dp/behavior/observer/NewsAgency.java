@@ -8,7 +8,6 @@ class BBCNewsChannel implements Observer {
 	@Override
 	public void update(Observable o, Object arg) {
 		System.out.println("BBC News Channel received a news - " + (String) arg);
-
 	}
 }
 
@@ -17,7 +16,6 @@ class CNNNewsChannel implements Observer {
 	@Override
 	public void update(Observable o, Object arg) {
 		System.out.println("CNN News Channel received a news - " + (String) arg);
-
 	}
 }
 
