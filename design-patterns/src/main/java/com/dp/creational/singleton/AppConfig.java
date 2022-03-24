@@ -4,6 +4,10 @@ public class AppConfig {
 
 	private static AppConfig instance = null;
 
+	private AppConfig() {
+		//private constructor
+	}
+	
 	public static AppConfig getInstance() {
 		if (instance == null) {
 			synchronized (AppConfig.class) { // test1 comment this line
